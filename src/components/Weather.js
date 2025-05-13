@@ -11,6 +11,7 @@ const Weather = () => {
     const [weather, setWeather] = useState(null);
     const [darkMode, setDarkMode] = useState(false);
     const [selectedDay, setSelectedDay] = useState(null);
+    console.log(process.env.REACT_APP_API_KEY);
 
     const fetchWeather = async () => {
         const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
