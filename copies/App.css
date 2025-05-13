@@ -1,0 +1,127 @@
+/* Dark & Light Mode */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.light-mode {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* App Container */
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Search Section */
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Weather Container */
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    max-width: 100%;
+    padding: 20px;
+}
+
+/* City Name */
+.city-container {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Today's Weather */
+.today-container {
+    width: auto;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Ensures growth based on content */
+}
+
+/* Temperature & Condition */
+.temperature-container {
+    margin-bottom: 10px;
+}
+
+.condition-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hourly Forecast Section (Inside Today Container) */
+.hourly-container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    height: auto; /* Allows it to grow as needed */
+    flex-grow: 1;
+}
+
+/* Each Row of 12 Cards */
+.hourly-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: nowrap; /* Prevents wrapping */
+    gap: 10px; /* Adds spacing between cards */
+}
+
+/* Individual Hourly Card */
+.hourly-card {
+    flex: 1;
+    max-width: calc(100% / 12); /* Ensures exactly 12 cards per row */
+    padding: 10px;
+    border-radius: 6px;
+    background: #e3e3e3;
+    text-align: center;
+}
+
+/* Input & Button Styles */
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Hover Effect for Hourly Cards */
+.hourly-card:hover {
+    background: #d1d1d1;
+    transform: scale(1.05);
+}
