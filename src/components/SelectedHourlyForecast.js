@@ -6,7 +6,7 @@ const SelectedHourlyForecast = ({ hourlyData, selectedDate, darkMode }) => {
             {hourlyData && (
                 <>
                     <h3>Hourly Forecast for {selectedDate}</h3>
-                    <div className="hourly-row">
+                    <div className={`hourly-row ${darkMode ? 'dark-mode' : 'light-mode'}`}>
                         {hourlyData.slice(0, 12).map((hour, index) => (
                             <div key={index} className="hourly-card">
                                 <p>{hour.time.split(" ")[1]}</p>
@@ -15,7 +15,7 @@ const SelectedHourlyForecast = ({ hourlyData, selectedDate, darkMode }) => {
                             </div>
                         ))}
                     </div>
-                    <div className="hourly-row">
+                    <div className={`hourly-row ${darkMode ? 'dark-mode' : 'light-mode'}`}>
                         {hourlyData.slice(12, 24).map((hour, index) => (
                             <div key={index} className="hourly-card">
                                 <p>{hour.time.split(" ")[1]}</p>

@@ -14,9 +14,7 @@
 
 .hourly-row.dark-mode,
 .forecast-row.dark-mode,
-.forecast-card.dark-mode,
-.upcoming-container.dark-mode,
-.selected-hourly-container.dark-mode {
+.forecast-card.dark-mode {
     color: #000000;
 }
 
