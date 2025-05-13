@@ -1,6 +1,10 @@
 {
   "name": "weather-app",
   "version": "0.1.0",
+<<<<<<< HEAD
+=======
+  "homepage": "https://github.com/abtorres079.github.io/Weather-React-App",
+>>>>>>> bcc1037 (Initial commit)
   "private": true,
   "homepage": "https://abtorres.github.io/weather",
   "dependencies": {
